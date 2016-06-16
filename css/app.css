@@ -1,46 +1,76 @@
-@keyframes slidein {
-  from {
-    margin-top: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-top: 0%;
-    width: 100%;
-  }
+body,header,div,h1,h2,h3,h4,h5,h6,footer{
+	margin: 0;
+	padding: 0;
+}
+.right{
+	float: right;
 }
 body{
-	background: #eee;
+	background: #414A50;
+}
+h1 {
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 59px;
+	line-height: 70px;
+}
+h2{
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size:40px;
+	line-height: 50px;
+}
+h3{
+	font-family: 'Arvo', Georgia, Times, serif;
+	text-align: center;
+	font-size: 26px;
+}
+.content{
+	text-shadow: 2px 2px 2px #eee;
+}
+ul.socialbar li{
+	list-style: none;
+	display: inline;
+}
+nav ul li a, p {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 25px;
 }
 header{
-	background: rgb(50,50,160);
-	margin-bottom: 50px;
+	background: #85A6B1;
+	color:#8BD7D1;
 }
-
+h1, h2{
+	max-width: 960px;
+	margin: 0 auto;
+}
+nav{
+	max-width: 960px;
+	margin: 0 auto;
+}
 nav ul{
-	background: rgb(50,200,50);
+	max-width: 950px;
 	padding: 10px;
-	border-radius: 10px;
-	margin-bottom: -20px;
 }
 nav ul li{
+	list-style: none;
 	display: inline;
-	padding: 5px;
-	border-right: 1px solid rgb(25,175,25);
-}
-nav ul li:hover, a:hover{
-	background: rgb(20,170,20);
-	color: white;
-	animation
-}
-nav ul li a:target{
-	animation-duration: 3s;
-	animation-name: slidein;
 }
 nav ul li a{
+	font-family: sans-serif;
+	text-shadow: 2px 2px 2px #7996a0;
 	color: white;
-	text-shadow: 2px 2px 2px #000;
+	text-decoration: none;
 }
-#about,#portfolio{
+.content{
+	background: white;
+	min-width: 240px;
+	max-width: 960px;
+	min-height: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+#about, #portfolio{
+	height:100%;
 	margin-top: 100%;
 }
