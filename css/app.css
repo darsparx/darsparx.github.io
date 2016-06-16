@@ -1,14 +1,46 @@
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+body{
+	background: #eee;
+}
 header{
 	background: rgb(50,50,160);
+	margin-bottom: 50px;
 }
+
 nav ul{
 	background: rgb(50,200,50);
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: -20px;
 }
 nav ul li{
 	display: inline;
 	padding: 5px;
+	border-right: 1px solid rgb(25,175,25);
+}
+nav ul li:hover, a:hover{
+	background: rgb(20,170,20);
+	color: white;
+	animation
+}
+nav ul li a:target{
+	animation-duration: 3s;
+	animation-name: slidein;
 }
 nav ul li a{
 	color: white;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 2px 2px 2px #000;
+}
+#about,#portfolio{
+	margin-top: 100%;
 }
