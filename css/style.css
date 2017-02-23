@@ -1,63 +1,88 @@
+body, header, div, h1, h2, h3, h4, h5, h6, footer {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #414A50;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 25px; }
+  line-height: 25px;
+}
 
 h1 {
   font-family: 'Arvo', Georgia, Times, serif;
   font-size: 59px;
-  line-height: 70px; }
+  line-height: 70px;
+}
 
 h2 {
   font-family: 'Arvo', Georgia, Times, serif;
   font-size: 40px;
-  line-height: 50px; }
+  line-height: 50px;
+}
 
 h3 {
   font-family: 'Arvo', Georgia, Times, serif;
   text-align: center;
-  font-size: 26px; }
+  font-size: 26px;
+}
 
 .content {
-  text-shadow: 2px 2px 2px #eee; }
+  text-shadow: 2px 2px 2px #eee;
+}
 
 ul.socialbar li {
   list-style: none;
-  display: inline; }
+  display: inline;
+}
 
 header {
   background: #85A6B1;
-  color: #8BD7D1; }
+  color: #8BD7D1;
+}
 
 h1, h2 {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 nav {
   max-width: 960px;
-  margin: 0 auto; }
-  nav ul {
-    max-width: 950px;
-    padding: 10px; }
-    nav ul li {
-      list-style: none;
-      display: inline;
-      padding: 10px;
-      transition: all 1.5s ease; }
-      nav ul li a {
-        font-family: sans-serif;
-        text-shadow: 2px 2px 2px #7996a0;
-        color: white;
-        text-decoration: none; }
-    nav ul li:hover {
-      background: #32d3f1; }
-      nav ul li:hover a {
-        color: black; }
+  margin: 0 auto;
+}
+
+nav ul {
+  max-width: 950px;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  transition: all 1.5s ease;
+}
+
+nav ul li a {
+  font-family: sans-serif;
+  text-shadow: 2px 2px 2px #7996a0;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #32d3f1;
+}
+
+nav ul li:hover a {
+  color: black;
+}
 
 footer {
   position: fixed;
-  background: blue; }
+  background: blue;
+}
 
 .content {
   background: white;
@@ -66,12 +91,19 @@ footer {
   min-height: 100%;
   padding: 10px;
   border-radius: 5px;
-  margin: 0 auto 20px; }
-  .content img {
-    border: 10px solid #bbb; }
-  .content p {
-    text-align: left;
-    max-width: 800px;
-    min-width: 400px; }
-  .content .off {
-    margin-top: 100%; }
+  margin: 0 auto 20px;
+}
+
+.content img {
+  border: 10px solid #bbb;
+}
+
+.content p {
+  text-align: left;
+  max-width: 800px;
+  min-width: 400px;
+}
+
+.content .off {
+  margin-top: 100%;
+}
