@@ -1,10 +1,26 @@
-# Site settings
-title:
-email:
-author:
-description:
+title: Site Title
+description: Site Description
 
-# Build settings
-permalink: :title/
-sass:
-  sass_dir: _sass
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "_portfolio"
+    values:
+        layout: "default"

@@ -1,6 +1,25 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
 
-Home page!
+<div class="jumbotron row">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+<div id="posts row">
+	<ul>
+	  {% for post in site.posts limit:3 %}
+	    <li class="post card col-sm">
+				<div class="card-body">
+		      <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		      <p class="card-text">{{ post.excerpt }}</p>
+				</div>
+	    </li>
+	  {% endfor %}
+	</ul>
+</div>
